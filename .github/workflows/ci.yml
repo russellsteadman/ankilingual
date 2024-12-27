@@ -21,7 +21,7 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm i
+        run: rm package-lock.json && npm i
 
       - name: Build Chrome
         run: npm run build:chrome
