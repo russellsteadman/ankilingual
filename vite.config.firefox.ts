@@ -27,6 +27,7 @@ export default mergeConfig(
           ...{
             browser_specific_settings: {
               gecko: {
+                id: "ankilingual@steadman.email",
                 strict_min_version: "118.0",
               },
             },
