@@ -24,10 +24,10 @@ jobs:
         run: npm ci
 
       - name: Build Chrome
-        run: npm build:chrome
+        run: npm run build:chrome
 
       - name: Build Firefox
-        run: npm build:firefox
+        run: npm run build:firefox
 
       - name: Upload Chrome extension artifacts
         uses: actions/upload-artifact@v4
