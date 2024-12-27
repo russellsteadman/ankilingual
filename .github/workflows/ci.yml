@@ -1,0 +1,42 @@
+name: Build and Zip Firefox and Chrome Extensions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Chrome
+        run: npm build:chrome
+
+      - name: Build Firefox
+        run: npm build:firefox
+
+      - name: Upload Chrome extension artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ankilingual-chrome
+          path: dist_chrome
+
+      - name: Upload Firefox extension artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ankilingual-firefox
+          path: dist_firefox

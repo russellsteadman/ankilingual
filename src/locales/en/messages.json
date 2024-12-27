@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "AnkiLingual",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Create vocabulary flashcards on the fly using AnkiLingual.",
+    "description": "Extension description"
+  },
+  "contextMenuItemGetImage": {
+    "message": "Add Image to Anki Card",
+    "description": "Context menu item to add right-clicked image"
+  }
+}

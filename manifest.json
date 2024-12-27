@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "AnkiLingual",
+  "description": "Create vocabulary flashcards on the fly using AnkiLingual.",
+  "action": {
+    "default_title": "Create flashcard",
+    "default_icon": {
+      "32": "icon-32.png"
+    }
+  },
+  "icons": {
+    "16": "icon-32.png",
+    "32": "icon-32.png",
+    "128": "icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["contentStyle.css", "icon-128.png", "icon-32.png"],
+      "matches": []
+    }
+  ],
+  "host_permissions": ["http://*/*", "https://*/*", "<all_urls>"]
+}

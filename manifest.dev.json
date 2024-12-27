@@ -1,0 +1,16 @@
+{
+  "action": {
+    "default_title": "Create flashcard",
+    "default_icon": "public/dev-icon-32.png"
+  },
+  "icons": {
+    "32": "public/dev-icon-32.png",
+    "128": "public/dev-icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["contentStyle.css", "dev-icon-128.png", "dev-icon-32.png"],
+      "matches": []
+    }
+  ]
+}
